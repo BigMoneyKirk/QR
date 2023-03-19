@@ -34,7 +34,7 @@
     animation: floatingCard 6.5s ease-in-out infinite;
     text-align: center;
     font-family: Gilroy-Light;
-    width: 80%;
+    width: 29rem;
 }
 
 @keyframes floatingCard {
@@ -49,6 +49,18 @@
 .personal-info {
     margin: 0 20px;
     color: lavender;
+
+    .name-span {
+        background-color: purple;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+    }
+
+    p {
+        a{
+            color: lightblue;
+        }
+    }
 }
 
 h1 {
@@ -170,4 +182,28 @@ li a {
 
 .deeznutz {
     content: "f0ac"
+}
+
+.social-media-full-container {
+    max-width: 33rem;
+    margin: 0 auto;
+    .top-row {
+        margin-bottom: 3rem;
+    }
+}
+
+.i-want-one-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0.5rem;
+    
+    .i-want-one-btn {
+        font-family: Gilroy-ExtraBold;
+        background: rgb(238,174,202);
+        background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+        padding: 0.5rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
 }

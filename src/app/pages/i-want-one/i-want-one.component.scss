@@ -1,0 +1,33 @@
+* {
+    color: white;
+    font-family: Gilroy-Light;
+}
+
+body {
+    background: transparent;
+}
+
+input[type="text"] {
+    background: black;
+    width: 50%;
+}
+
+article.i-want-one-page {
+    display: flex;
+    justify-content: center;
+
+    .i-want-one-content {
+        max-width: 30rem;
+        min-width: 260px;
+    }
+}
+
+button[type="submit"] {
+    color: black;
+}
+
+.form-label-input {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+}

@@ -13,7 +13,11 @@ export class MainComponent implements OnInit {
   constructor(public imageService: ImageService) { }
 
   firstName = "Stephen";
-  lastName = "Kirk";
+  lastName = "Kirkland";
+
+  occupation = "CEO and Founder of Kirkland Enterprises Unlimited, LLC";
+  phoneNumber = "912-521-4941";
+  email = "vcard@keultd.com";
 
   ngOnInit() {
   }
@@ -23,19 +27,19 @@ export class MainComponent implements OnInit {
       firstNames: this.firstName,
       lastNames: this.lastName,
     },
-    telephone: ["912-536-7419"],
-    email: ["skirkland.job@gmail.com"],
-    workEmail: ["kirklandenterprisesunlimited@gmail.com"],
-    role: "CEO of Kirkland Enterprises Unlimited",
-    url: "https://BigMoneyKirk.github.io/QR/",
+    telephone: [this.phoneNumber],
+    email: [this.email],
+    workEmail: [this.email],
+    role: this.occupation,
+    url: "bigmoneykirk.com",
     sound: "../../assets/sounds/Stephen_Kirkland.m4a",
     logo: "../../assets/images/logos/KEU_Logo_FullColor.png",
     photo: "Li4vLi4vYXNzZXRzL2ltYWdlcy9sb2dvcy9LRVVfTG9nb19GdWxsQ29sb3IucG5n",
-    note: "Creator of the QR Virtual Business Card"
+    note: "Creator of the vCard (Virtual Business Card)"
   };
 
   public goToForm() {
-    window.open(`https://docs.google.com/forms/d/e/1FAIpQLSe5K2m4nwe89oWBzhw2gkXpgIpufygNnPnR9g-46-dHfsAb0g/viewform?vc=0&c=0&w=1&flr=0`, "_blank");
+    window.open(`https://forms.gle/SBqvsStZRe8oEQQD9`, "_blank");
   }
 
 }

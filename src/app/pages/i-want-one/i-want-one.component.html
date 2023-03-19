@@ -1,0 +1,84 @@
+<header>
+    <h1>the I Want One! page</h1>
+</header>
+<article class="i-want-one-page">
+    <section class="i-want-one-content">
+
+        <body>
+            <p>Please enter some basic information about yourself. This information will be all the information you want
+                to
+                share on this platform.</p>
+
+            <form action="">
+                <section class="form-label-input-container">
+                    <div class="form-label-input">
+                        <label for="first-name">First Name *</label>
+                        <input [(ngModel)]="vCard.firstName" type="text" name="firstName" id="first-name" required>
+                    </div>
+                    <div class="form-label-input">
+                        <label for="last-name">Last Name *</label>
+                        <input [(ngModel)]="vCard.lastName" type="text" name="lastName" id="last-name" required>
+                    </div>
+                    <div class="form-label-input">
+                        <label for="company-name">Company's Name *</label>
+                        <input [(ngModel)]="vCard.companyName" type="text" name="companyName" id="company-name" required>
+                    </div>
+                    <div class="form-label-input">
+                        <label for="job-title">Job Title *</label>
+                        <input [(ngModel)]="vCard.occupation" type="text" name="occupation" id="job-title" required>
+                    </div>
+                    <div class="form-label-input">
+                        <label for="phone-number">Phone Number *</label>
+                        <input [(ngModel)]="vCard.phoneNumber" type="text" name="phoneNumber" id="phone-number" required>
+                    </div>
+                    <div class="form-label-input">
+                        <label for="email">Email *</label>
+                        <input [(ngModel)]="vCard.email" type="text" name="email" id="email" required>
+                    </div>
+                    <div class="form-label-input">
+                        <label for="instagram">Instagram</label>
+                        <input type="text" name="" id="instagram">
+                    </div>
+                    <div class="form-label-input">
+                        <label for="facebook">Facebook</label>
+                        <input type="text" name="" id="facebook">
+                    </div>
+                    <div class="form-label-input">
+                        <label for="youtube">YouTube</label>
+                        <input type="text" name="" id="youtube">
+                    </div>
+                    <div class="form-label-input">
+                        <label for="snapchat">Snapchat</label>
+                        <input type="text" name="" id="snapchat">
+                    </div>
+                    <div class="form-label-input">
+                        <label for="linkedIn">LinkedIn</label>
+                        <input type="text" name="" id="linkedIn">
+                    </div>
+                    <div class="form-label-input">
+                        <label for="tikTok">TikTok</label>
+                        <input type="text" name="" id="tikTok">
+                    </div>
+                    <div class="form-label-input">
+                        <label for="twitter">Twitter</label>
+                        <input type="text" name="" id="twitter">
+                    </div>
+                    <div class="form-label-input">
+                        <label for="professional-website">Professional Website</label>
+                        <input type="text" name="" id="professional-website">
+                    </div>
+                    <div class="form-label-input">
+                        <label for="other">Other</label>
+                        <input type="text" name="" id="other">
+                    </div>
+                </section>
+                <div class="form-label-input">
+                    <label for="feedback">Feedback</label>
+                    <textarea name="" id="feedback" cols="30" rows="10"></textarea>
+                </div>
+
+                <button type="submit" (click)="submit()">Submit</button>
+            </form>
+        </body>
+    </section>
+</article>

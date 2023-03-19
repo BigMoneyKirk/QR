@@ -1,0 +1,1 @@
+{"ast":null,"code":"export let RoutingConstant = /*#__PURE__*/(() => {\n  class RoutingConstant {}\n  RoutingConstant.IWantOne = 'i-want-one';\n  return RoutingConstant;\n})();","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}

@@ -7,16 +7,20 @@ import { MainComponent } from './components/main/main.component';
 import { ImageService } from './services/image.service';
 
 import { NgxVcardModule } from "ngx-vcard";
+import { IWantOneComponent } from './pages/i-want-one/i-want-one.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainComponent
+    MainComponent,
+    IWantOneComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgxVcardModule
+    NgxVcardModule,
+    FormsModule
   ],
   providers: [
     ImageService

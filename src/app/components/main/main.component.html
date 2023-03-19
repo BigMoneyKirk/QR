@@ -8,31 +8,39 @@
     <div class="card-container">
         <div class="card-part">
             <div class="personal-info">
-                <h1>{{firstName}} {{lastName}}</h1>
-                <h4>Website Designer</h4>
-                <p>912-536-7419</p>
-                <p>skirkland.job@gmail.com</p>
+                <h1><span class="name-span">{{firstName}} {{lastName}}</span></h1>
+                <h4>{{occupation}}</h4>
+                <p><a href="tel:{{phoneNumber}}">{{phoneNumber}}</a></p>
+                <p><a href="mailto:{{email}}">{{email}}</a></p>
             </div>
         </div>
     </div>
 
     <div class="social-media-full-container">
-        <ul>
+        <ul class="top-row">
             <li><a href="https://www.instagram.com/bigmoneykirk/" target="_blank"> <i class="fab fa-instagram"></i> </a>
             </li>
             <li><a href="https://www.m.facebook.com/stevokirk/" target="_blank"> <i class="fab fa-facebook-f"></i> </a>
             </li>
             <li><a href="https://www.linkedin.com/in/bigmoneykirk/" target="_blank"> <i class="fab fa-linkedin-in"></i>
                 </a></li>
-            <!-- <li><i class="fab fa-snapchat-ghost"></i></li> -->
             <li><a href="https://twitter.com/StevoKirk" target="_blank"> <i class="fab fa-twitter"></i> </a></li>
-            <li><a href="https://messingaround-524ea.firebaseapp.com/home" target="_blank"><i class="fa-thin fa-globe"></i></a></li>
+        </ul>
+        <ul>
+            <li><a href="https://kirklandenterprises.org/home" target="_blank"><i
+                        class="fa-thin fa-globe"></i></a></li>
+            <li><a href="https://t.snapchat.com/6LRG4idN" target="_blank"><i class="fab fa-snapchat-ghost"></i></a></li>
+            <li><a href="https://www.tiktok.com/@bigmoneykirk" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
+            <li><a href="https://youtube.com/@BigMoneyKirk" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
         </ul>
     </div>
 
     <div class="download-vcf">
         <a href="javascript:void(0)" id="downloadButton" [vcdDownloadVCard]="vCard">
-            <span>Add Contact</span>
+            <span>Add to Phone</span>
         </a>
     </div>
+    <section class="i-want-one-container">
+        <button class="btn i-want-one-btn" (click)="goToForm()">I Want One!</button>
+    </section>
 </div>
